@@ -1,10 +1,14 @@
 import axios from 'axios';
 
-const API_KEY="wxwmv7z3kky9x78ro"
+const API_KEY=import.meta.env.VITE_ENHANCED_IMAGE_API_KEY;
 const BASE_URL="https://techhk.aoscdn.com/"
 const MAXIMUM_RETRIES = 20;
 
 export const enhancedImageAPI = async (file) => {
+    if (!API_KEY) {
+    console.error("API Key (REACT_APP_ENHANCED_IMAGE_API_KEY) is not set. Please check your .env file or Vercel environment variables.");
+    throw new Error("Image enhancement service is unavailable: API Key missing.");
+}
     try {
        const taskId=await uploadImage(file);
        const enhancedImageData=await pollEnhancedImage(taskId);
