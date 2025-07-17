@@ -22,8 +22,7 @@ Pixelora is a sleek and powerful web application that allows users to effortless
 
 ## 📸 Live Demo
 
-[![ezgif-3fec99f279ae5c.gif](https://i.postimg.cc/LsTxsfjR/ezgif-3fec99f279ae5c.gif)](https://postimg.cc/NyK6JKNP)
-
+![Pixelora Demo](./demo.gif)
 ---
 
 ## 🛠️ Tech Stack
@@ -78,7 +77,8 @@ pixelora/
 * ✨ Add multiple enhancement styles (HD, Color Boost, etc.)
 * ⏳ Display enhancement progress bar
 * 🔐 Add user authentication for saving history
-* 📤 Export as ZIP or PDF
+* 📤 Integrate with cloud storage (Google Drive, Dropbox)
+* 🚀 TypeScript integration for better type safety and maintainability
 
 ---
 
